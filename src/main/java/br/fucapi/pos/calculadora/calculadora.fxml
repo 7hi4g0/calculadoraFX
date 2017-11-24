@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:controller="br.fucapi.pos.calculadora.controller.CalculadoraController"
+	xmlns:fx="http://javafx.com/fxml">
+	<Button text="Say 'Hello World'"
+	onAction="#handleSubmitButtonAction" />
+</StackPane>
