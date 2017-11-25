@@ -12,10 +12,13 @@
 	
 	<Text fx:id="saida"
 		GridPane.columnIndex="0" GridPane.rowIndex="0"
-		GridPane.columnSpan="4"
+		GridPane.columnSpan="5"
 		GridPane.halignment="right"
-		textAlignment="right"
-		/>
+		textAlignment="right">
+		<font>
+			<Font name="Monospaced Regular" size="24.0"/>
+		</font>
+	</Text>
 	
 	<Button text="7"
 		GridPane.columnIndex="0" GridPane.rowIndex="1"
@@ -56,33 +59,44 @@
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
-	<Button text="."
-		GridPane.columnIndex="0" GridPane.rowIndex="4"
-		maxWidth="Infinity" maxHeight="Infinity"
-		onAction="#handleSubmitButtonAction" />
 	<Button text="0"
-		GridPane.columnIndex="1" GridPane.rowIndex="4"
+		GridPane.columnIndex="0" GridPane.rowIndex="4"
+		GridPane.columnSpan="2"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
-	<Button text="="
+	<Button text="."
 		GridPane.columnIndex="2" GridPane.rowIndex="4"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
-	<Button text="/"
+	<Button text="CE"
 		GridPane.columnIndex="3" GridPane.rowIndex="1"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
-	<Button text="*"
+	<Button text="C"
 		GridPane.columnIndex="3" GridPane.rowIndex="2"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
-	<Button text="-"
+	<Button text="="
 		GridPane.columnIndex="3" GridPane.rowIndex="3"
+		GridPane.rowSpan="2"
+		maxWidth="Infinity" maxHeight="Infinity"
+		onAction="#handleSubmitButtonAction" />
+	
+	<Button text="/"
+		GridPane.columnIndex="4" GridPane.rowIndex="1"
+		maxWidth="Infinity" maxHeight="Infinity"
+		onAction="#handleSubmitButtonAction" />
+	<Button text="*"
+		GridPane.columnIndex="4" GridPane.rowIndex="2"
+		maxWidth="Infinity" maxHeight="Infinity"
+		onAction="#handleSubmitButtonAction" />
+	<Button text="-"
+		GridPane.columnIndex="4" GridPane.rowIndex="3"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="+"
-		GridPane.columnIndex="3" GridPane.rowIndex="4"
+		GridPane.columnIndex="4" GridPane.rowIndex="4"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	

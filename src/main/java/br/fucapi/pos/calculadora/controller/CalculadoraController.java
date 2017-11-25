@@ -5,18 +5,25 @@ import java.math.BigDecimal;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 public class CalculadoraController {
 	private Op operacao = Op.NONE;
-	private BigDecimal anterior = new BigDecimal(0);
-	private String atual = "";
+	private BigDecimal anterior = BigDecimal.ZERO;
+	private String atual = BigDecimal.ZERO.toString();
 	@FXML private Text saida;
 	
 	public CalculadoraController() {
 	}
 	
-	@FXML protected void handleSubmitButtonAction(ActionEvent event) {
+	@FXML
+	public void initialize() {
+		saida.setText(atual);
+	}
+	
+	@FXML
+	protected void handleSubmitButtonAction(ActionEvent event) {
 		Button btn = (Button)event.getSource();
 		String comando = btn.getText();
 		
@@ -27,7 +34,7 @@ public class CalculadoraController {
 		case "+":
 			if (atual.length() > 0) {
 				anterior = new BigDecimal(atual);
-				atual = "";
+				atual = BigDecimal.ZERO.toString();
 			}
 			operacao = Op.getOp(comando);
 			break;
@@ -44,6 +51,12 @@ public class CalculadoraController {
 		case "9":
 			atual = atual + comando;
 			break;
+		case "CE":
+			anterior = BigDecimal.ZERO;
+			operacao = Op.NONE;
+		case "C":
+			atual = BigDecimal.ZERO.toString();
+			break;
 		case "=":
 			atual = operacao.apply(anterior, new BigDecimal(atual)).toString();
 			operacao = Op.NONE;
@@ -51,6 +64,7 @@ public class CalculadoraController {
 			break;
 		}
 		
+		atual = new BigDecimal(atual).toString();
 		saida.setText(atual);
 	}
 	
