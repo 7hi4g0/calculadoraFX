@@ -39,6 +39,10 @@ public class CalculadoraController {
 			operacao = Op.getOp(comando);
 			break;
 		case ".":
+			if (!atual.contains(".")) {
+				atual = atual + comando;
+			}
+			break;
 		case "0":
 		case "1":
 		case "2":
@@ -49,12 +53,16 @@ public class CalculadoraController {
 		case "7":
 		case "8":
 		case "9":
-			atual = atual + comando;
+			if (atual.equals("0")) {
+				atual = comando;
+			} else {
+				atual = atual + comando;
+			}
 			break;
-		case "CE":
+		case "C":
 			anterior = BigDecimal.ZERO;
 			operacao = Op.NONE;
-		case "C":
+		case "CE":
 			atual = BigDecimal.ZERO.toString();
 			break;
 		case "=":
@@ -64,7 +72,6 @@ public class CalculadoraController {
 			break;
 		}
 		
-		atual = new BigDecimal(atual).toString();
 		saida.setText(atual);
 	}
 	

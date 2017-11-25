@@ -8,12 +8,14 @@
 
 <GridPane fx:controller="br.fucapi.pos.calculadora.controller.CalculadoraController"
 	xmlns:fx="http://javafx.com/fxml"
-	alignment="center" hgap="2" vgap="2">
+	alignment="center" hgap="2" vgap="2"
+	maxWidth="Infinity" maxHeight="Infinity">
 	
 	<Text fx:id="saida"
 		GridPane.columnIndex="0" GridPane.rowIndex="0"
 		GridPane.columnSpan="5"
 		GridPane.halignment="right"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		textAlignment="right">
 		<font>
 			<Font name="Monospaced Regular" size="24.0"/>
@@ -22,81 +24,99 @@
 	
 	<Button text="7"
 		GridPane.columnIndex="0" GridPane.rowIndex="1"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="8"
 		GridPane.columnIndex="1" GridPane.rowIndex="1"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="9"
 		GridPane.columnIndex="2" GridPane.rowIndex="1"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
 	<Button text="4"
 		GridPane.columnIndex="0" GridPane.rowIndex="2"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="5"
 		GridPane.columnIndex="1" GridPane.rowIndex="2"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="6"
 		GridPane.columnIndex="2" GridPane.rowIndex="2"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
 	<Button text="1"
 		GridPane.columnIndex="0" GridPane.rowIndex="3"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="2"
 		GridPane.columnIndex="1" GridPane.rowIndex="3"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="3"
 		GridPane.columnIndex="2" GridPane.rowIndex="3"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
 	<Button text="0"
 		GridPane.columnIndex="0" GridPane.rowIndex="4"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		GridPane.columnSpan="2"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="."
 		GridPane.columnIndex="2" GridPane.rowIndex="4"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
 	<Button text="CE"
 		GridPane.columnIndex="3" GridPane.rowIndex="1"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="C"
 		GridPane.columnIndex="3" GridPane.rowIndex="2"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="="
 		GridPane.columnIndex="3" GridPane.rowIndex="3"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		GridPane.rowSpan="2"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
 	<Button text="/"
 		GridPane.columnIndex="4" GridPane.rowIndex="1"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="*"
 		GridPane.columnIndex="4" GridPane.rowIndex="2"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="-"
 		GridPane.columnIndex="4" GridPane.rowIndex="3"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	<Button text="+"
 		GridPane.columnIndex="4" GridPane.rowIndex="4"
+		GridPane.hgrow="always" GridPane.vgrow="always"
 		maxWidth="Infinity" maxHeight="Infinity"
 		onAction="#handleSubmitButtonAction" />
 	
